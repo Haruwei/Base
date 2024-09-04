@@ -8,19 +8,16 @@ namespace ConsoleApp17
 {
     class Program
     {
-        public static void MaxEz()
+        public static void NumCtg()
         {
-            int a = 5;
-            int b = 8;
-            int c = 9;
-            int MaxNumber = Math.Max(a, b);
-            MaxNumber = Math.Max(MaxNumber, c);
-            Console.WriteLine(MaxNumber);
+            double a = 3;
+            double ctg = 1 / Math.Tan(a);
+            Console.WriteLine(ctg);
             Console.ReadKey();
         }
         static void Main(string[] args)
         {
-            MaxEz();
+            NumCtg();
         }
     }
 }
