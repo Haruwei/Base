@@ -8,16 +8,39 @@ namespace ConsoleApp17
 {
     class Program
     {
-        public static void NumCtg()
+        public static void Array1()
         {
-            double a = 3;
-            double ctg = 1 / Math.Tan(a);
-            Console.WriteLine(ctg);
+            int[] числа = { 1, 3, 5, 7, 9, 11, 13, 15, 17, 19 };
+            int sum = 0;
+            for (int i = 0; i < числа.Length; i++)
+            {
+                if (числа[i] > 0 && числа[i] < 10)
+                {
+                    sum += числа[i];
+                    Console.WriteLine(sum);
+                }
+            }
+            Console.WriteLine("ниже количество");
+            Console.ReadKey();
+        }
+        public static void Array2()
+        {
+            int[] числа = { 1, 3, 5, 7, 9, 11, 13, 15, 17, 19 };
+            int колво = 0;
+            for (int i = 0; i < числа.Length; i++)
+            {
+                if (числа[i] > 0 && числа[i] < 10)
+                {
+                    колво++;
+                }
+            }
+            Console.WriteLine(колво);
             Console.ReadKey();
         }
         static void Main(string[] args)
         {
-            NumCtg();
+            Array1();
+            Array2();
         }
     }
 }
