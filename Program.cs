@@ -21,7 +21,6 @@ namespace ConsoleApp17
                 }
             }
             Console.WriteLine("ниже количество");
-            Console.ReadKey();
         }
         public static void Array2()
         {
