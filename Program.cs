@@ -4,43 +4,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp17
+namespace ConsoleApp1
 {
     class Program
     {
-        public static void Array1()
+        static void UpDown(string Ez)
         {
-            int[] числа = { 1, 3, 5, 7, 9, 11, 13, 15, 17, 19 };
-            int sum = 0;
-            for (int i = 0; i < числа.Length; i++)
-            {
-                if (числа[i] > 0 && числа[i] < 10)
-                {
-                    sum += числа[i];
-                    Console.WriteLine(sum);
-                }
-            }
-            Console.WriteLine("ниже количество");
-        }
-        public static void Array2()
-        {
-            int[] числа = { 1, 3, 5, 7, 9, 11, 13, 15, 17, 19 };
-            int колво = 0;
-            for (int i = 0; i < числа.Length; i++)
-            {
-                if (числа[i] > 0 && числа[i] < 10)
-                {
-                    колво++;
-                }
-            }
-            Console.WriteLine(колво);
-            Console.ReadKey();
+            string up = Ez.ToUpper();
+            string down = Ez.ToLower();
+            Console.WriteLine($"Большой:{up}, маленький:{down}");
         }
         static void Main(string[] args)
         {
-            Array1();
-            Array2();
+            string Ez25 = "НЕ знаю что сюда написать";
+            string Ez26 = "Кто ты?";
+            string Ez27 = "Я? Аянами Рей";
+            string Ez28 = "Ты тоже Аянами Рей?";
+            string Ez29 = "Просто придумай что-нибудь";
+            UpDown(Ez25);
+            UpDown(Ez26);
+            UpDown(Ez27);
+            UpDown(Ez28);
+            UpDown(Ez29);
+            Console.ReadKey();
         }
     }
 }
-
